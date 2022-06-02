@@ -1,0 +1,17 @@
+<h2>Book Detail</h2>
+<form [formGroup]="bookForm" (submit)="save()">
+  <table>
+    <tr>
+      <th><label for="bName">Name</label></th>
+      <th><input type="text" id="bName" formControlName="title"></th>
+    </tr><tr>
+    <th><label for="bAuthor">Author</label></th>
+    <th><input type="text" id="bAuthor" formControlName="author"></th>
+  </tr><tr>
+    <th><label for="bDes">Description</label></th>
+    <th><input type="text" id="bDes" formControlName="description"></th>
+  </tr>
+  </table>
+  <button>Save</button>
+  <button (click)="backHome()">Cancel</button>
+</form>
